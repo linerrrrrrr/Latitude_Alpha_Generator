@@ -56,5 +56,3 @@ def f_momentum20D_001(bars: pd.DataFrame, f_name = 'f_0001', min_periods: int = 
     momentum_long = momentum_long[['datetime', 'symbol', 'factor_name', 'factor_value']].copy()
     return momentum_long
 
-factor_for_zylh = f_momentum20D_001(bars = big_df, f_name = 'f_0001', min_periods = 20) # 智盈量化因子入库格式规范
-factor_for_zylh.head()
